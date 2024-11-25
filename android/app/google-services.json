@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "184837274645",
+    "project_id": "kualitas-udara-95408",
+    "storage_bucket": "kualitas-udara-95408.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184837274645:android:a8ef787010240bb1f3a21c",
+        "android_client_info": {
+          "package_name": "com.example.kualitas_udara"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWf4j4JiCdmy0EMKw8uH5s0yyu1o_dU-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
