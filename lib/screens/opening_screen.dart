@@ -16,7 +16,7 @@ class _OpeningScreenState extends State<OpeningScreen> {
         builder: (context, appProvider, child){
           return Scaffold(
             appBar: AppBar(
-              title: Text("Monitoring Air Quality", style: appProvider.whiteRoboto14Bold,),
+              title: Text("Air Quality Monitoring", style: appProvider.whiteRoboto14Bold,),
               centerTitle: true,
               backgroundColor: appProvider.mainColor,
             ),
@@ -45,11 +45,13 @@ class _OpeningScreenState extends State<OpeningScreen> {
                           child: Image.asset("images/temperature.png"),
                         ),
                         const SizedBox(height: 14,),
-                        Center(child: Text("TEMPERATURE", style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w700),),)
+                        const Center(child: Text("TEMPERATURE", style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w700),),)
                       ],
                     ),
                   ),
-                    onTap: () {},
+                    onTap: () {
+                    appProvider.gotoTemperatureScreen(context: context);
+                    },
                   ),
 
                   const SizedBox(height: 20,),
@@ -72,11 +74,13 @@ class _OpeningScreenState extends State<OpeningScreen> {
                           child: Image.asset("images/humidity.png"),
                         ),
                         const SizedBox(height: 14,),
-                        Center(child: Text("HUMIDITY", style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w700),),)
+                        const Center(child: Text("HUMIDITY", style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w700),),)
                       ],
                     ),
                   ),
-                    onTap: () {},
+                    onTap: () {
+                    appProvider.gotoHumidityScreen(context: context);
+                    },
                   ),
 
 
@@ -100,11 +104,13 @@ class _OpeningScreenState extends State<OpeningScreen> {
                             child: Image.asset("images/gas.png"),
                           ),
                           const SizedBox(height: 14,),
-                          Center(child: Text("GAS", style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w700),),)
+                          const Center(child: Text("GAS", style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w700),),)
                         ],
                       ),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      appProvider.gotoGasScreen(context: context);
+                    },
                   ),
                 ],
               ),
